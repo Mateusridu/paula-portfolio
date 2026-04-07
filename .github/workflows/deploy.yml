@@ -22,7 +22,7 @@ concurrency:
 
 env:
     NODE_VERSION: 20.20.0
-    GENERIC_LIBRARY: paula-portfolio/paula-portfolio
+    GENERIC_LIBRARY: .github/workflows/package-lock.json
     BASE_URL: ${{ secrets.BASE_URL }}
 
 jobs:
