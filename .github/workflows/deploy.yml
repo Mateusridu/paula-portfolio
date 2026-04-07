@@ -22,7 +22,7 @@ concurrency:
 
 env:
     NODE_VERSION: 20.20.0
-    GENERIC_LIBRARY: frontend/paula-portfolio
+    GENERIC_LIBRARY: paula-portfolio/paula-portfolio
     BASE_URL: ${{ secrets.BASE_URL }}
 
 jobs:
