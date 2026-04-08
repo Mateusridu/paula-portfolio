@@ -7,7 +7,7 @@ import Contact from './components/contact'
 
 function App() {
     return (
-        <HashRouter basename={import.meta.env.DEV ? '/' : '/paula-portfolio/'}>
+        <HashRouter basename={import.meta.env.DEV ? '/paula-portfolio/' : '/'}>
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
                 <Route index path="about" element={<About />} />
