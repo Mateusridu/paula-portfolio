@@ -1,0 +1,114 @@
+.page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.nav-logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.top-tags {
+    bottom: auto;
+    top: 35px;
+}
+
+.top-tag-html {
+    margin-left: -5px;
+}
+
+.tags {
+    color: #ffffff;
+    opacity: 0.6;
+    position: fixed;
+    bottom: 0;
+    left: 120px;
+    font-size: 18px;
+    font-family: 'La Belle Aurore';
+    pointer-events: none;
+    z-index: 10;
+}
+
+.bottom-tag-html {
+    margin-left: -5px;
+}
+
+.container {
+    width: 100%;
+    will-change: contents;
+    position: relative;
+    opacity: 0;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-page,
+.about-page,
+.treatments-page,
+.contact-page {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+// ─── Apenas about-page aqui — contact-page tem seu próprio scss ───────────────
+.about-page {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 80px 60px;
+    gap: 40px;
+
+    .text-zone {
+        width: 35%;
+        max-height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: flex-start;
+
+        h1 {
+            font-size: 53px;
+            font-family: 'Playfair';
+            color: #545454;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 40px;
+            text-align: justify;
+        }
+
+        p {
+            font-size: 20px;
+            color: #545454;
+            font-family: 'DMSerifDislay';
+            font-weight: 300;
+            min-width: fit-content;
+            animation: pulse 1s;
+            text-align: justify;
+
+            &:nth-of-type(1) {
+                animation-delay: 1.1s;
+            }
+        }
+
+        .text-animate-hover {
+            &:hover {
+                color: rgb(196, 211, 224);
+            }
+        }
+    }
+}

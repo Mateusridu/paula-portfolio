@@ -1,0 +1,35 @@
+$primary-color: #112e8b;
+
+@import 'animate.css';
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'La Belle Aurore';
+    src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'DMSerifDislay';
+    src: url('./assets/fonts/DMSerifDisplay-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('./assets/fonts/Playfair-VariableFont_opsz\,wdth\,wght.ttf') format('ttf');
+}
+
+input,
+textarea {
+    font-family: 'Helvetica Neue';
+    font-family: 'DMSerifDislay';
+}

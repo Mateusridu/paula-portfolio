@@ -1,0 +1,78 @@
+.home-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    // Imagem de fundo cobre a seção inteira
+    .mac {
+        background-image: url('../../assets/images/mac.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: local;
+        position: absolute;
+        inset: 0;               // cobre os 100vh da seção
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    // Texto flutua sobre o fundo, centralizado via flex do pai
+    .text-zone {
+        position: relative;     // sai do absolute — o flex do pai já centraliza
+        z-index: 1;
+        width: 40%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        color: #ffffff;
+        font-size: 53px;
+        font-family: 'Playfair';
+        font-weight: 400;
+
+        img {
+            width: 53px;
+            margin-left: 20px;
+            position: relative;
+            top: 10px;
+            opacity: 0;
+            height: auto;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+        }
+    }
+
+
+    .flat-button {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: 'Playfair';
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 2.5px solid #c4d3e0;
+        margin-top: 25px;
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #c4d3e0;
+
+        &:hover {
+            background: darken(#c4d3e0, 10%);
+            color: #ffffff;
+        }
+    }
+
+    .whatsicon {
+        width: 30px;
+        height: auto;
+    }
+}
